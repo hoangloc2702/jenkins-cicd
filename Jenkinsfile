@@ -4,7 +4,7 @@ pipeline {
 		stage('build') {
 			agent {
 				docker {
-					image: 'node:14-slim'
+					image 'node:14-slim'
 				}
 			}
 			steps {
