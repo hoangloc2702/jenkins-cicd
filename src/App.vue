@@ -3,5 +3,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+	data() {
+		return {
+			count: 3,
+		};
+	},
+};
 </script>
