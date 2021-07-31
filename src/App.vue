@@ -6,7 +6,7 @@
 export default {
 	data() {
 		return {
-			count: 8,
+			count: 9,
 		};
 	},
 };
