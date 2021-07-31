@@ -5,7 +5,6 @@ pipeline {
 			agent {
 				docker {
 					image 'node:14-slim'
-					args '-u 0:0 /tmp:/root/.cache'
 				}
 			}
 			steps {
