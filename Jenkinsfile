@@ -7,6 +7,8 @@ pipeline {
 	stages {
 		stage('build') {
 			steps {
+				git branch: '$BRANCH_NAME', credentialsId: 'jenkins_github_userpass', url: 'https://github.com/hoangloc2702/jenkins-cicd.git'
+				echo '$BRANCH_NAME'
 				sh 'npm install'
 			}
 		}
